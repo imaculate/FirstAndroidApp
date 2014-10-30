@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="beforearray">
+        <item>Start here</item>
+        <item>You have the right intentions but .. </item>
+        <item>My God , is that what happens?</item>
+        <item> So what now?</item>
+        <item> But they look great and happy, at least in the pictures</item>
+        <item>Thin people workout, why shouldn't I?</item>
+        <item> I'm at risk of dying with diabetes</item>
+        <item> I dream of becoming a model</item>
+        <item> My friends, family wont stop calling me names</item>
+        <item>I want to loose weight for an occasion</item>
+    </string-array>
+    <string-array name="duringarray">
+        <item>Congrats Buddy!</item>
+        <item> Know thy body limits</item>
+        <item> Psychologically prepare yourself</item>
+        <item> This is what I suggest you do.</item>
+        <item> So what now?</item>
+        <item> Why?</item>
+    </string-array>
+    <string-array name="afterarray">
+        <item>Congrats Buddy!</item>
+        <item> Does this happen to you?</item>
+        <item> This is what I suggest you do.</item>
+    </string-array>
+    <string-array name="feedbacktypelist">
+        <item>@string/bugtype</item>
+        <item>@string/praisetype</item>
+        <item>@string/suggtype</item>
+        <item>@string/combtype</item>
+    </string-array>
+
+</resources>

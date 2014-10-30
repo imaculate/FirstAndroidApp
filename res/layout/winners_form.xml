@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+     xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+         
+    >
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/weight_lost" />
+	
+ <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    
+    
+
+    <EditText
+        android:id="@+id/weight_lost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number" />
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radio_kilos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kilos" >
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/radio_pounds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pounds" >
+        </RadioButton>
+    </RadioGroup>
+</LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/loose_time" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/l_years"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/years"
+            android:inputType="number" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/l_months"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/months"
+            android:inputType="number" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/l_weeks"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/weeks"
+            android:inputType="number" >
+        </EditText>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/maintain_time" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/m_years"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/years"
+            android:inputType="number" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/m_months"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/months"
+            android:inputType="number" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/m_weeks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/weeks"
+            android:inputType="number" >
+        </EditText>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/method" />
+
+    <EditText
+        android:id="@+id/How_You_Did"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:LINES="10"
+        android:inputType="textMultiLine" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/effects" />
+
+    <EditText
+        android:id="@+id/After_Effects"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:LINES="10"
+        android:inputType="textMultiLine" >
+    </EditText>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/recomend" />
+
+    <EditText
+        android:id="@+id/Recommend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:LINES="10"
+        android:inputType="textMultiLine" >
+    </EditText>
+
+    <CheckBox
+        android:id="@+id/CheckBoxShare"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/shareDetails" >
+    </CheckBox>
+
+    <Button
+        android:id="@+id/WinnersSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+   
+        android:text="@string/feedbackbutton" >
+
+    </Button>
+
+</LinearLayout>
+</ScrollView>
