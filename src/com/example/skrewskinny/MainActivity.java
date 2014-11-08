@@ -1,16 +1,25 @@
 package com.example.skrewskinny;
 
-import android.support.v7.app.ActionBarActivity;
+
+import android.app.Activity;
+import android.content.Intent;
+
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends Activity implements OnClickListener {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		
+		Button before = (Button)findViewById(R.id.beforeid);
+		before.setOnClickListener(this);
 	}
 
 	@Override
@@ -30,5 +39,18 @@ public class MainActivity extends ActionBarActivity {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+
+	
+
+	@Override
+	public void onClick(View v) {
+		// TODO Auto-generated method stub
+		Intent myIntent = new Intent(this, List.class);
+        myIntent.putExtra("typeList", ((Button)v).getText());
+      
+        startActivity(myIntent);
+        finish();
+		
 	}
 }

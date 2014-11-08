@@ -20,7 +20,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
     	android:text="@string/before"
-    	android:id = "+@/beforeid"
+    	android:id = "@+id/beforeid"
     	
     />
     
@@ -28,7 +28,7 @@
          android:layout_width="match_parent"
         android:layout_height="wrap_content"
     	android:text="@string/during"
-    	android:id = "+@/duringid"
+    	android:id = "@+id/duringid"
     	
     />
     
@@ -36,7 +36,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
     	android:text="@string/after"
-    	android:id = "+@/afterid"
+    	android:id = "@+id/afterid"
     	
     />
     
@@ -44,7 +44,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
     	android:text="@string/winner"
-    	android:id = "+@/winnerid"
+    	android:id = "@+id/winnerid"
     	
     />
     

@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="arrow">Arrow</string>
 
     <string name="app_name">SkrewSkinny</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="title">SkrewSkinny</string>
     <string name="before"> I really want to loose weight</string>
-    <string name="during">I'm losing weight and it feels great! </string>
-    <string name="after"> I have reached my target weight and I'm not sure what to do next</string>
-    <string name="winner">I have kept my weight off for years now, I'm awesome </string>
-    <string name="Beautiful"><font size="24"><b> Hello Beautiful, What's your story?</b></font></string>
+    <string name="during">I\'m losing weight and it feels great! </string>
+    <string name="after"> I have reached my target weight and I\'m not sure what to do next </string>
+    <string name="winner"> I have kept my weight off for years now, I\'m awesome </string>
+    <string name="Beautiful"><font size="24"><b> Hello Beautiful, What\'s your story?</b></font></string>
     <string name="weight_lost">How much weight did you loose?</string>
     <string name="loose_time">How long did it take you to loose that much? </string>
     <string name="maintain_time">For how long have you maintained your current weight </string>
