@@ -129,7 +129,7 @@
         android:id="@+id/How_You_Did"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:LINES="10"
+        android:lines="10"
         android:inputType="textMultiLine" />
 
     <TextView
@@ -141,7 +141,7 @@
         android:id="@+id/After_Effects"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:LINES="10"
+        android:lines="10"
         android:inputType="textMultiLine" >
     </EditText>
 
@@ -154,7 +154,7 @@
         android:id="@+id/Recommend"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:LINES="10"
+        android:lines="10"
         android:inputType="textMultiLine" >
     </EditText>
 

@@ -1,4 +1,4 @@
-package com.example.skrewskinny;
+package com.example.yourhealthyourrules;
 
 
 public class Item {

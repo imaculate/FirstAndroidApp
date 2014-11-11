@@ -1,6 +1,7 @@
-package com.example.skrewskinny;
+package com.example.yourhealthyourrules;
 
 import java.util.ArrayList;
+
 
 import android.app.Activity;
 import android.content.Context;
@@ -22,19 +23,22 @@ public class List extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.list);
-		listv = (ListView)findViewById(listview1);
-		listv.setAdapter(new ListAdapter(BeforeList.this,android.R.layout.simple_list_item_1, getArray()));
 		Intent intent = getIntent();
 		Bundle b = intent.getExtras(); 
 		type = b.getString("typeList");
 		
+		listv = (ListView)findViewById(R.id.listview1);
+		listv.setAdapter(new ListAdapter(List.this,android.R.layout.simple_list_item_1, getArray()));
+		
+		
 	}
 	
 	public ArrayList<Item> getArray(){
-		ArrayList<Item> ret;
+		ArrayList<Item> ret = new ArrayList<Item>();
+		int len  = getResources().getStringArray(R.array.beforearray).length;
 		
-		ArrayList<String> arr;
-		ArrayList<String> arrF;
+		String[] arr = new String[len];
+		String[] arrF = new String [len];
 		
 		switch(type){
 			case "beforeid":
@@ -61,8 +65,8 @@ public class List extends Activity {
 			
 		}
 			
-			for(int i=0; i<arr.size(); i++ ){
-				Item item = new Item(arr.get(i), arrF.get(i));
+			for(int i=0; i<arr.length; i++ ){
+				Item item = new Item(arr[i], arrF[i]);
 				ret.add(item);
 				
 			}
@@ -105,7 +109,7 @@ public class List extends Activity {
                     });
                 }
             } catch (Exception e) {
-                Log.i(List.ListAdapter.CLASS.toString(), e.getMessage());
+                Log.i("List.ListAdapter.CLASS", e.getMessage());
             }
             return view;
         }

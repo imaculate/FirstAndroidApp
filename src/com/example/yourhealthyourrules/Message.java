@@ -1,4 +1,4 @@
-package com.example.skrewskinny;
+package com.example.yourhealthyourrules;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -7,6 +7,8 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 
 import android.app.Activity;
+import android.content.Context;
+import android.content.res.AssetManager;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
@@ -34,18 +36,23 @@ public class Message extends Activity{
 		title.setText(name);
 		message = (TextView)findViewById(R.id.just_message);
 		
-		message.setText(readFile(filename));
+		message.setText(readFile(getApplicationContext(), filename));
 		
 		
 	}
 	
-	private String readFile(String filename) {
+	public static String readFile(Context context, String filename) {
         
         String ret = "";
          
         try {
-            InputStream inputStream = openFileInput(filename);
-             
+        
+        	AssetManager am = context.getAssets();
+            InputStream inputStream = am.open(filename);
+            
+           
+          
+            
             if ( inputStream != null ) {
                 InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
                 BufferedReader bufferedReader = new BufferedReader(inputStreamReader);

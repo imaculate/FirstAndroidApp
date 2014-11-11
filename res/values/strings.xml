@@ -33,5 +33,8 @@
     <string name="praisetype">Praise</string>
     <string name="suggtype">Suggestion</string>
     <string name= "combtype">A combination </string>
-
+    <string  name="aboutme">About Me</string>
+    <string name="share_this">Share_App</string>
+    <string name="feedback_text">Send Feedback</string>
+	
 </resources>

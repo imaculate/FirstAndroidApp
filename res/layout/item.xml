@@ -7,14 +7,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" 
         android:id = "@+id/message_title"
-        android:textSize = "8pt"
-   </TextView>
+        android:textSize = "8pt"/>
+ 
     
    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content" 
-        android:id="@+id/just_message"
-    </TextView>
+        android:id="@+id/just_message"/>
+
 
 
 </LinearLayout>
