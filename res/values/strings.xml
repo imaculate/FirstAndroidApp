@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="favos">Your Favourites</string>
+	<string name="favourite">Add to favourites</string>
+	<string name="sharethis">Share this article</string>
     <string name="arrow">Arrow</string>
-
-    <string name="app_name">SkrewSkinny</string>
+    <string name="rateapp"> Rate this App</string>
+     <string name="rateappno">Looks like you need to install the Google Play Store</string>
+    <string name="app_name">Your Health Your Rules!</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="title">SkrewSkinny</string>
@@ -32,9 +36,9 @@
     <string name="bugtype"> Bug</string>
     <string name="praisetype">Praise</string>
     <string name="suggtype">Suggestion</string>
-    <string name= "combtype">A combination </string>
-    <string  name="aboutme">About Me</string>
+    <string name="combtype">A combination </string>
+    <string name="aboutme">About Me</string>
     <string name="share_this">Share_App</string>
     <string name="feedback_text">Send Feedback</string>
-	
+
 </resources>

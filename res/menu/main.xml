@@ -9,28 +9,37 @@
         android:title="@string/action_settings"
         app:showAsAction="never"/>
     
- 
-    
-    
+     <item
+        android:id="@+id/favs"
+       
+        android:orderInCategory="100"
+        android:title="@string/favos"
+        android:icon="@android:drawable/btn_star_big_on"
+       
+        
+        
+        
+        app:showAsAction="ifRoom"/>
     <item
         android:id="@+id/AboutMe"
         android:orderInCategory="100"
         android:title="@string/aboutme"
         app:showAsAction="never"/>
-    
     <item
         android:id="@+id/shareApp"
+        android:actionProviderClass="android.widget.ShareActionProvider"
         android:orderInCategory="100"
-        
-
         android:title="@string/share_this"
-        app:showAsAction="ifRoom"
-        android:actionProviderClass=
-                "android.widget.ShareActionProvider"/>
+        app:showAsAction="ifRoom"/>
     
-            
-            
-            
+    <item
+        android:id="@+id/rateApp"
+       
+        android:orderInCategory="100"
+        android:title="@string/rateapp"
+        
+        
+        app:showAsAction="ifRoom"/>
     
     <item
         android:id="@+id/sendfeedback"

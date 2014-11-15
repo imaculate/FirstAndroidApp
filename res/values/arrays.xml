@@ -13,9 +13,6 @@
         <item> My friends, family wont stop calling me names</item>
         <item>I want to loose weight for an occasion</item>
     </string-array>
-    
-   
-    
     <string-array name="duringarray">
         <item>Congrats Buddy!</item>
         <item> Know thy body limits</item>
@@ -24,57 +21,52 @@
         <item> So what now?</item>
         <item> Why?</item>
     </string-array>
-    
     <string-array name="afterarray">
         <item>Congrats Buddy!</item>
         <item> Does this happen to you?</item>
         <item> This is what I suggest you do.</item>
     </string-array>
-    
     <string-array name="feedbacktypelist">
         <item>@string/bugtype</item>
         <item>@string/praisetype</item>
         <item>@string/suggtype</item>
         <item>@string/combtype</item>
     </string-array>
+    <string-array name="beforefiles">
+        <item>start.txt</item>
+        <item>intentions.txt</item>
+        <item>yeah.txt</item>
+        <item>next.txt</item>
+        <item> happy.txt</item>
+        <item>workout.txt</item>
+        <item>diabetes.txt</item>
+        <item> model.txt</item>
+        <item>fatshaming.txt</item>
+        <item>occasion.txt</item>
+    </string-array>
+    <string-array name="duringfiles">
+        <item>start.txt</item>
+        <item>intentions.txt</item>
+        <item>yeah.txt</item>
+        <item>next.txt</item>
+        <item> happy.txt</item>
+        <item>workout.txt</item>
+        <item>diabetes.txt</item>
+        <item> model.txt</item>
+        <item>fatshaming.txt</item>
+        <item>occasion.txt</item>
+    </string-array>
+    <string-array name="afterfiles">
+        <item>start.txt</item>
+        <item>intentions.txt</item>
+        <item>yeah.txt</item>
+        <item>next.txt</item>
+        <item> happy.txt</item>
+        <item>workout.txt</item>
+        <item>diabetes.txt</item>
+        <item> model.txt</item>
+        <item>fatshaming.txt</item>
+        <item>occasion.txt</item>
+    </string-array>
 
-    
-     <string-array name="beforefiles">
-        <item>start.txt</item>
-        <item>intentions.txt</item>
-        <item>yeah.txt</item>
-        <item>next.txt</item>
-        <item> happy.txt</item>
-        <item>workout.txt</item>
-        <item>diabetes.txt</item>
-        <item> model.txt</item>
-        <item>fatshaming.txt</item>
-        <item>occasion.txt</item>
-   </string-array>
-   
-     <string-array name="duringfiles">
-        <item>start.txt</item>
-        <item>intentions.txt</item>
-        <item>yeah.txt</item>
-        <item>next.txt</item>
-        <item> happy.txt</item>
-        <item>workout.txt</item>
-        <item>diabetes.txt</item>
-        <item> model.txt</item>
-        <item>fatshaming.txt</item>
-        <item>occasion.txt</item>
-   </string-array>
-   
-     <string-array name="afterfiles">
-        <item>start.txt</item>
-        <item>intentions.txt</item>
-        <item>yeah.txt</item>
-        <item>next.txt</item>
-        <item> happy.txt</item>
-        <item>workout.txt</item>
-        <item>diabetes.txt</item>
-        <item> model.txt</item>
-        <item>fatshaming.txt</item>
-        <item>occasion.txt</item>
-   </string-array>
 </resources>

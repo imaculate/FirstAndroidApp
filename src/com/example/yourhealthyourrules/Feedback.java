@@ -3,6 +3,7 @@ package com.example.yourhealthyourrules;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -13,25 +14,33 @@ import android.widget.Toast;
 
 public class Feedback extends Activity implements OnClickListener {
 	String name, email , type, message;
+	 EditText et_name;
+	 EditText et_email;
+	EditText et_body;
+	Spinner feedbackSpinner ;
+	
+	public void onBackPressed(){
+		finish();
+	}
 	
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.feedback);
 		
+		setRequestedOrientation (ActivityInfo.SCREEN_ORIENTATION_PORTRAIT); 
+		 et_name = (EditText) findViewById(R.id.EditTextName);
 		
-		final EditText et_name = (EditText) findViewById(R.id.EditTextName);
-		name = et_name.getText().toString();
 		
-		final EditText et_email = (EditText) findViewById(R.id.EditTextEmail);
-		email = et_email.getText().toString();
+		et_email = (EditText) findViewById(R.id.EditTextEmail);
 		
-		final EditText et_body = (EditText) findViewById(R.id.EditTextFeedbackBody);
-		message = et_body.getText().toString();
 		
-		final Spinner feedbackSpinner = (Spinner) findViewById(R.id.SpinnerFeedbackType);
-		type = feedbackSpinner.getSelectedItem().toString();
+		et_body = (EditText) findViewById(R.id.EditTextFeedbackBody);
 		
-		message += "From " + name + "at " + email + "about " + type + message;
+		
+		feedbackSpinner = (Spinner) findViewById(R.id.SpinnerFeedbackType);
+
+		
+		
 		
 		Button b = (Button)findViewById(R.id.ButtonSendFeedback);
 		b.setOnClickListener(this);
@@ -45,6 +54,15 @@ public class Feedback extends Activity implements OnClickListener {
 	
 	
 	public void onClick(View v){
+		name = et_name.getText().toString();
+		
+		email = et_email.getText().toString();
+		message = et_body.getText().toString();
+		type = feedbackSpinner.getSelectedItem().toString();
+		
+		message += "From " + name + " at " + email + " about \n" + type + "\n"+ message;
+		
+		
 		Intent i = new Intent(Intent.ACTION_SEND);
 		i.setType("message/rfc822");
 		i.putExtra(Intent.EXTRA_EMAIL  , new String[]{"imaculatemosha@yahoo.com"});
@@ -52,8 +70,9 @@ public class Feedback extends Activity implements OnClickListener {
 		i.putExtra(Intent.EXTRA_TEXT   , message);
 		
 		try {
+			Toast.makeText(Feedback.this, "Thank you very much for the feedback", Toast.LENGTH_SHORT).show();
 		    startActivity(Intent.createChooser(i, "Send mail..."));
-		    Toast.makeText(Feedback.this, "Thank you very much for the feedback", Toast.LENGTH_SHORT).show();
+		    
 		} catch (android.content.ActivityNotFoundException ex) {
 		    Toast.makeText(Feedback.this, "There are no email clients installed.", Toast.LENGTH_SHORT).show();
 		}
