@@ -81,7 +81,7 @@ public class Message extends Activity {
 
 		{
 			SqliteHelper help = new SqliteHelper(this);
-			if (help.containsFile(filename)) {
+			if (!help.containsFile(filename)) {
 				help.addFavourite(name, filename);
 				Toast.makeText(this, "Added to favourites!", Toast.LENGTH_SHORT)
 						.show();

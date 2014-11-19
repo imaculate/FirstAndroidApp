@@ -14,7 +14,11 @@
     <string name="during">I\'m losing weight and it feels great! </string>
     <string name="after"> I have reached my target weight and I\'m not sure what to do next </string>
     <string name="winner"> I have kept my weight off for years now, I\'m awesome </string>
-    <string name="Beautiful"><font size="24"><b> Hi Buddy! What\'s your story?</b></font></string>
+    <string name="Beautiful"><font size="24"><b> Hi Buddy! Thank you downloading this app, 
+        you will find practical advice on how to loose weight, and be healthy.
+        What you wont find here is calorie counters , motivation or types of exercise. Because we all know they don\'t work.
+        What you will get out of this app is common sense that went out the window when we entered the 21st century. With that in mind, 
+         What\'s your story?</b></font></string>
     <string name="weight_lost">How much weight did you loose?</string>
     <string name="loose_time">How long did it take you to loose that much? </string>
     <string name="maintain_time">For how long have you maintained your current weight </string>
