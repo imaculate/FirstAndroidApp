@@ -45,28 +45,17 @@
         <item>occasion.txt</item>
     </string-array>
     <string-array name="duringfiles">
-        <item>start.txt</item>
-        <item>intentions.txt</item>
-        <item>yeah.txt</item>
-        <item>next.txt</item>
-        <item> happy.txt</item>
-        <item>workout.txt</item>
-        <item>diabetes.txt</item>
-        <item> model.txt</item>
-        <item>fatshaming.txt</item>
-        <item>occasion.txt</item>
+        <item>congrats.txt</item>
+        <item>limits.txt</item>
+        <item>prepare.txt</item>
+        <item>suggest.txt</item>
+        <item>whatnow.txt</item>
+        <item>why.txt</item>
     </string-array>
     <string-array name="afterfiles">
-        <item>start.txt</item>
-        <item>intentions.txt</item>
-        <item>yeah.txt</item>
-        <item>next.txt</item>
-        <item> happy.txt</item>
-        <item>workout.txt</item>
-        <item>diabetes.txt</item>
-        <item> model.txt</item>
-        <item>fatshaming.txt</item>
-        <item>occasion.txt</item>
+        <item>congs.txt</item>
+        <item>happen.txt</item>
+        <item>dothis.txt</item>
     </string-array>
 
 </resources>
