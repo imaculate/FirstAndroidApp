@@ -34,6 +34,7 @@ public class MainActivity extends Activity implements OnClickListener {
 
 		Button winner = (Button) findViewById(R.id.winnerid);
 		winner.setOnClickListener(this);
+		showStartDialog();
 	}
 
 	@Override
@@ -150,4 +151,23 @@ public class MainActivity extends Activity implements OnClickListener {
 
 		dlgAlert.create().show();
 	}
+	
+	
+	public void showStartDialog() {
+		AlertDialog.Builder dlgAlert = new AlertDialog.Builder(this);
+
+		dlgAlert.setMessage(R.string.start_sms);
+		dlgAlert.setTitle("Hello!");
+
+		dlgAlert.setCancelable(true);
+		dlgAlert.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+			public void onClick(DialogInterface dialog, int which) {
+				// dismiss the dialog
+				dialog.dismiss();
+			}
+		});
+
+		dlgAlert.create().show();
+	}
 }
+

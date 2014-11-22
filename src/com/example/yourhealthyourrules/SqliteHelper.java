@@ -43,25 +43,24 @@ public class SqliteHelper extends SQLiteOpenHelper {
 		values.put("file", file);
 
 		db.insert("favourites", "title", values);
-		db.close();
-
+		
 	}
 	
 	public Cursor getFavourites()
 
 	{
 		
-
-		Cursor cursor = getReadableDatabase().rawQuery("select * from favourites",
+		SQLiteDatabase db = getReadableDatabase();
+		Cursor cursor = db.rawQuery("select * from favourites",
 				null);
-
+		
 		return cursor;
 
 	}
 	public boolean containsFile(String filename){
 		SQLiteDatabase db = this.getReadableDatabase();
 		Cursor cur1=db.rawQuery("select * from favourites where file=$filename", null);
-	     
+		
 	     
 	      if(cur1.getCount()>0)
 	      {
