@@ -33,13 +33,13 @@ public class List extends Activity {
 		Intent intent = getIntent();
 		Bundle b = intent.getExtras();
 		type = b.getInt("typeList");
-		System.out.println(type);
+		
 
 		listv = (ListView) findViewById(R.id.listview1);
 		try {
 			listv.setAdapter(new ListAdapter(List.this,
 					android.R.layout.simple_list_item_1, getArray()));
-			//System.out.println("lol, gocha");
+			
 		} catch (IOException e) {
 			Log.e("Fav", "Couldnt get a favourts list");
 		}
@@ -130,13 +130,13 @@ public class List extends Activity {
 
 	private class ListAdapter extends ArrayAdapter<Item> { // --CloneChangeRequired
 		private ArrayList<Item> mList; // --CloneChangeRequired
-		private Context mContext;
+	
 
 		public ListAdapter(Context context, int textViewResourceId,
 				ArrayList<Item> list) { // --CloneChangeRequired
 			super(context, textViewResourceId, list);
 			this.mList = list;
-			this.mContext = context;
+			
 		}
 
 		public View getView(int position, View convertView, ViewGroup parent) {
